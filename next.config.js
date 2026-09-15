@@ -2,7 +2,7 @@
 const nextConfig = {
   async redirects() {
     return [
-      { source: '/', destination: '/fitbitepizza/index.html', permanent: false }
+      { source: '/', destination: '/fitbitepizza/site.html', permanent: false }
     ]
   }
 }
