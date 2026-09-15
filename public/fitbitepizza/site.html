@@ -3216,11 +3216,33 @@ document.addEventListener("DOMContentLoaded", function() {
     body .elementor-element-f2a4969 {
         display: none !important;
     }
+    /* 7. Remove massive blank spaces on mobile by reducing section padding */
+    body .elementor-element.elementor-element-f3401e1,
+    body .elementor-element.elementor-element-8c248e2,
+    body .elementor-element.elementor-element-0cff698 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    /* 8. Reset padding/margin on remaining text columns so they don't leave gaps */
+    body .elementor-element.elementor-element-5707ad7,
+    body .elementor-element.elementor-element-cddf9cc,
+    body .elementor-element.elementor-element-708ba86 {
+        padding: 20px 10px !important;
+        margin: 0 !important;
+    }
+    body .elementor-element.elementor-element-5707ad7 > .elementor-element-populated,
+    body .elementor-element.elementor-element-cddf9cc > .elementor-element-populated,
+    body .elementor-element.elementor-element-708ba86 > .elementor-element-populated {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
     /* 5. Hide large decorative watermark numbers to clean up mobile view */
     body .pbmit-ihbox-icon-type-text {
         display: none !important;
     }
 }
 </style>
+
+
 
 
