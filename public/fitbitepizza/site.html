@@ -3164,3 +3164,52 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 }
 </style>
+<style id="clean-mobile-fix">
+@media (max-width: 1024px) {
+    /* 1. Center all text and headings */
+    .elementor-widget-heading .elementor-heading-title, 
+    .elementor-widget-text-editor, 
+    .pbmit-heading-subheading,
+    .pbmit-ihbox-contents { 
+        text-align: center !important; 
+    }
+    .pbmit-heading-subheading {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .elementor-button-wrapper { 
+        text-align: center !important; 
+    }
+    
+    /* 2. Give the Pizza Column height so it doesn't collapse and overlap text */
+    body .elementor-element.elementor-element-0cff698 .elementor-element-6152e5e {
+        min-height: 500px !important; 
+        position: relative !important;
+        margin: 50px auto !important;
+        display: block !important;
+    }
+
+    /* 3. Center the Yellow Circle perfectly inside the Pizza Column */
+    body .elementor-element.elementor-element-0cff698 .elementor-element-618f9c3 {
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    /* 4. Scale down the Yellow Circle for mobile so it fits the screen */
+    body .elementor-element.elementor-element-0cff698 .pbmit-circle-box-1 {
+        transform: scale(0.6) !important;
+        transform-origin: center center !important;
+    }
+
+    /* 5. Hide large decorative watermark numbers to clean up mobile view */
+    body .pbmit-ihbox-icon-type-text {
+        display: none !important;
+    }
+}
+</style>
