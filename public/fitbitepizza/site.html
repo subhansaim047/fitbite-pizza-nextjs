@@ -3207,9 +3207,13 @@ document.addEventListener("DOMContentLoaded", function() {
         transform-origin: center center !important;
     }
 
-    /* 6. HIDE Splitting Pizza and Splitting Burger on Mobile as requested */
-    body .elementor-element.elementor-element-bff8b9f,
-    body .elementor-element.elementor-element-f2a4969 {
+        /* 6. Nuke ALL Tween Effects, Splitting Images, Parallax, and Background Circles on Mobile */
+    body .elementor-widget-pbmit_tween_effect_element,
+    body .pbmit-tween-efect,
+    body [class*="pbmit-circle-box"],
+    body .elementor-element-6152e5e,
+    body .elementor-element-bff8b9f,
+    body .elementor-element-f2a4969 {
         display: none !important;
     }
     /* 5. Hide large decorative watermark numbers to clean up mobile view */
@@ -3218,4 +3222,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 }
 </style>
+
 
