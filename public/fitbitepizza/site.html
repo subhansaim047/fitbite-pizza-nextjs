@@ -3181,13 +3181,7 @@ document.addEventListener("DOMContentLoaded", function() {
         text-align: center !important; 
     }
     
-    /* 2. Give the Pizza Column height so it doesn't collapse and overlap text */
-    body .elementor-element.elementor-element-0cff698 .elementor-element-6152e5e {
-        min-height: 500px !important; 
-        position: relative !important;
-        margin: 50px auto !important;
-        display: block !important;
-    }
+    
 
     /* 3. Center the Yellow Circle perfectly inside the Pizza Column */
     body .elementor-element.elementor-element-0cff698 .elementor-element-618f9c3 {
@@ -3263,12 +3257,19 @@ document.addEventListener("DOMContentLoaded", function() {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
+    /* 12. Hide all absolute positioned pattern shapes on mobile because they stretch the containers and leave blank spaces */
+    body .elementor-element.elementor-element-f3401e1 .elementor-absolute,
+    body .elementor-element.elementor-element-8c248e2 .elementor-absolute,
+    body .elementor-element.elementor-element-0cff698 .elementor-absolute {
+        display: none !important;
+    }
     /* 5. Hide large decorative watermark numbers to clean up mobile view */
     body .pbmit-ihbox-icon-type-text {
         display: none !important;
     }
 }
 </style>
+
 
 
 
