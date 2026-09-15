@@ -3236,12 +3236,41 @@ document.addEventListener("DOMContentLoaded", function() {
         padding: 0 !important;
         margin: 0 !important;
     }
+    /* 9. FORCE all sections to collapse around their content without any minimum height */
+    body .elementor-section {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+    
+    /* 10. Aggressively strip margins that might be causing phantom space */
+    body .elementor-element.elementor-element-f3401e1,
+    body .elementor-element.elementor-element-8c248e2,
+    body .elementor-element.elementor-element-0cff698 {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    /* 11. Remove all phantom paddings/margins on columns within these sections */
+    body .elementor-element.elementor-element-f3401e1 .elementor-column,
+    body .elementor-element.elementor-element-8c248e2 .elementor-column,
+    body .elementor-element.elementor-element-0cff698 .elementor-column,
+    body .elementor-element.elementor-element-f3401e1 .elementor-element-populated,
+    body .elementor-element.elementor-element-8c248e2 .elementor-element-populated,
+    body .elementor-element.elementor-element-0cff698 .elementor-element-populated {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
     /* 5. Hide large decorative watermark numbers to clean up mobile view */
     body .pbmit-ihbox-icon-type-text {
         display: none !important;
     }
 }
 </style>
+
+
 
 
 
